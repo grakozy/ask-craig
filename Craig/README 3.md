@@ -1,45 +1,27 @@
-# Craig — your know‑it‑all macOS assistant
+# Craig — AI answers anywhere you type on macOS
 
-Craig is a lightweight menu bar app that lets you ask questions anywhere you type. Trigger Craig with a slash command or mention, get an answer from a local Ollama model, and paste it back without leaving your app.
+Craig is a lightweight, privacy‑first menu bar assistant that answers questions anywhere you type. Trigger Craig with a slash command or mention, get an answer from a local Ollama model, and paste it back without breaking flow.
 
-- Local‑first privacy (uses your local Ollama server)
-- Keyboard‑centric UX: `/craig <question>` then Return
-- Live mode: `@craig <question>` streams responses
-- Preferences for trigger, model, and generation options
+- ⚡️ Keyboard‑first: Type `/craig <question>` and press Return
+- ✨ Live mode: Type `@craig ` then your question and press Return to stream answers
+- 🔒 Private by default: Runs locally with your own Ollama models
+- 🎛️ Preferences: Choose trigger phrase, model, and generation options
+- 🖥️ Tiny Swift app: Native macOS UI, no Electron
+
+> Status: Open source and free. This is my first public project — feedback welcome!
+
+## Demo
+
+- Slash command flow: `/craig how do I write a for loop in Swift?` → modal appears → Insert pastes back into the focused app
+- Mention live mode: `@craig ` + your question → live modal streams the answer → Esc cancels; Insert pastes back
+
+(Screenshots/GIFs coming soon.)
 
 ## Requirements
 - macOS 13+
 - Accessibility permission (to watch keystrokes and paste answers)
 - [Ollama](https://ollama.com/) running locally
 
-## Getting started
-1. Install and launch Craig.
-2. On first run, grant Accessibility permission and ensure Ollama is running.
-3. Open Preferences (⌘,) to choose your trigger and model.
+## Quick start
 
-## Usage
-- Slash trigger: Type `/craig What is a monad?` and press Return.
-- Mention live mode: Type `@craig ` then your question and press Return.
-- Insert (↵) pastes the answer back into the focused app.
-
-## Preferences
-- Trigger: `/craig`, `/ask`, or `/ai`
-- Model: Any model installed in Ollama
-- Generation: Temperature, Top‑P, Max tokens
-
-## Troubleshooting
-- “Ollama is not running”: Open Terminal and run `ollama serve`.
-- No HUD or typing: Ensure Accessibility permission is enabled in System Settings → Privacy & Security → Accessibility.
-
-## Development
-- The app is split into focused files:
-  - `CraigApp.swift`: entry point
-  - `AppDelegate.swift`: app lifecycle, menus, windows
-  - `KeyboardMonitor.swift`: keyboard event tap and command modes
-  - `OllamaService.swift`: networking and streaming
-  - `Views.swift`: SwiftUI views and model
-  - `PreferencesView.swift`: Settings UI
-- Tests live in `Tests/` and use the Swift Testing framework.
-
-## License
-MIT
+1) Install Ollama (and pull a small, fast model)
