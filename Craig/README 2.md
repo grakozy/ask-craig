@@ -7,7 +7,7 @@ Free & Open Source • macOS 12+ • Works with local Ollama models
 
 ## ✨ Landing
 
-![Craig header](https://user-images.githubusercontent.com/placeholder/craig-hero.png)
+![Craig hero](assets/images/craig-hero.png)
 
 <h1 align="center">
   <span style="background: linear-gradient(90deg, #c084fc, #fb7185); -webkit-background-clip: text; background-clip: text; color: transparent;">Craig</span>
@@ -19,8 +19,8 @@ Free & Open Source • macOS 12+ • Works with local Ollama models
 
 <p align="center">
   <a href="#download"><img alt="Download for macOS" src="https://img.shields.io/badge/Download-macOS-7c3aed?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/YOUR_USERNAME/YOUR_REPO"><img alt="View on GitHub" src="https://img.shields.io/badge/View%20on-GitHub-9333ea?style=for-the-badge&logo=github"></a>
-  <a href="https://www.producthunt.com/" target="_blank"><img alt="Product Hunt" src="https://img.shields.io/badge/Product%20Hunt-Launch-ec3750?style=for-the-badge&logo=product-hunt&logoColor=white"></a>
+  <a href="https://github.com/grakozy/ask-craig"><img alt="View on GitHub" src="https://img.shields.io/badge/View%20on-GitHub-9333ea?style=for-the-badge&logo=github"></a>
+  <a href="https://www.producthunt.com/products/craig" target="_blank"><img alt="Product Hunt" src="https://img.shields.io/badge/Product%20Hunt-Launch-ec3750?style=for-the-badge&logo=product-hunt&logoColor=white"></a>
 </p>
 
 <p align="center" style="color:#a78bfa">Requires macOS 12+ • Ollama installed • Free forever</p>
@@ -62,9 +62,12 @@ The experience mirrors this concept:
 
 Just like Rocket—download, install, and you’re ready to go.
 
-1) Install Ollama (if you haven’t already):
-
 ```bash
+# 1) Install Ollama
 brew install ollama
-ollama pull llama3.2
+
+# 2) Pull a small, fast model (you can choose another)
+ollama pull llama3.2:1b-instruct-q4_K_M
+
+# 3) Start the Ollama server (leave this running)
 ollama serve

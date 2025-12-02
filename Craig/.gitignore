@@ -1,0 +1,24 @@
+# Xcode
+*.xcworkspace
+xcuserdata/
+DerivedData/
+build/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+
+# macOS
+.DS_Store
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Carthage
+Carthage/Build/
