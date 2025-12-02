@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		CE93DC2F2EDE43E00007EEAD /* Craig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Craig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE93DC412EDE48410007EEAD /* CraigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9CDECA2EDE889C00959D22 /* Craig.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Craig.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +56,7 @@
 		CE93DC262EDE43E00007EEAD = {
 			isa = PBXGroup;
 			children = (
+				CE9CDECA2EDE889C00959D22 /* Craig.xctestplan */,
 				CE93DC312EDE43E00007EEAD /* Craig */,
 				CE93DC422EDE48410007EEAD /* CraigTests */,
 				CE93DC302EDE43E00007EEAD /* Products */,
