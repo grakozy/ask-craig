@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		CE93DC452EDE48410007EEAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE93DC272EDE43E00007EEAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE93DC2E2EDE43E00007EEAD;
+			remoteInfo = Craig;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CE93DC2F2EDE43E00007EEAD /* Craig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Craig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE93DC412EDE48410007EEAD /* CraigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = Craig;
 			sourceTree = "<group>";
 		};
+		CE93DC422EDE48410007EEAD /* CraigTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CraigTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE93DC2C2EDE43E00007EEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE93DC3E2EDE48410007EEAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				CE93DC312EDE43E00007EEAD /* Craig */,
+				CE93DC422EDE48410007EEAD /* CraigTests */,
 				CE93DC302EDE43E00007EEAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				CE93DC2F2EDE43E00007EEAD /* Craig.app */,
+				CE93DC412EDE48410007EEAD /* CraigTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = CE93DC2F2EDE43E00007EEAD /* Craig.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CE93DC402EDE48410007EEAD /* CraigTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE93DC472EDE48410007EEAD /* Build configuration list for PBXNativeTarget "CraigTests" */;
+			buildPhases = (
+				CE93DC3D2EDE48410007EEAD /* Sources */,
+				CE93DC3E2EDE48410007EEAD /* Frameworks */,
+				CE93DC3F2EDE48410007EEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE93DC462EDE48410007EEAD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CE93DC422EDE48410007EEAD /* CraigTests */,
+			);
+			name = CraigTests;
+			packageProductDependencies = (
+			);
+			productName = CraigTests;
+			productReference = CE93DC412EDE48410007EEAD /* CraigTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					CE93DC2E2EDE43E00007EEAD = {
 						CreatedOnToolsVersion = 26.1.1;
+					};
+					CE93DC402EDE48410007EEAD = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = CE93DC2E2EDE43E00007EEAD;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				CE93DC2E2EDE43E00007EEAD /* Craig */,
+				CE93DC402EDE48410007EEAD /* CraigTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CE93DC2D2EDE43E00007EEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE93DC3F2EDE48410007EEAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE93DC3D2EDE48410007EEAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE93DC462EDE48410007EEAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE93DC2E2EDE43E00007EEAD /* Craig */;
+			targetProxy = CE93DC452EDE48410007EEAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CE93DC382EDE43E10007EEAD /* Debug */ = {
@@ -254,10 +329,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9978DDT3G;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -286,10 +360,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9978DDT3G;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +379,46 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CE93DC482EDE48410007EEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9978DDT3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Grakozy.CraigTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craig.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Craig";
+			};
+			name = Debug;
+		};
+		CE93DC492EDE48410007EEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9978DDT3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Grakozy.CraigTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Craig.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Craig";
 			};
 			name = Release;
 		};
@@ -326,6 +439,15 @@
 			buildConfigurations = (
 				CE93DC3B2EDE43E10007EEAD /* Debug */,
 				CE93DC3C2EDE43E10007EEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE93DC472EDE48410007EEAD /* Build configuration list for PBXNativeTarget "CraigTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE93DC482EDE48410007EEAD /* Debug */,
+				CE93DC492EDE48410007EEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
